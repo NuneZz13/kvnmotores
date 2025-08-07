@@ -16,7 +16,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/">
                     <Image
-                        src="/logo.png" // Certifique-se de colocar essa imagem na pasta public/
+                        src="/logo.png"
                         alt="KVN Motores"
                         width={160}
                         height={50}
@@ -44,7 +44,7 @@ export default function Header() {
                     <Link href="/" className="block hover:text-gray-300" onClick={toggleMenu}>Home</Link>
                     <Link href="/sobre" className="block hover:text-gray-300" onClick={toggleMenu}>Sobre</Link>
                     <Link href="/produtos" className="block hover:text-gray-300" onClick={toggleMenu}>Produtos</Link>
-                    <Link href="/contato" className="block hover:text-gray-300" onClick={toggleMenu}>Contato</Link>
+                    <Link href="/contactos" className="block hover:text-gray-300" onClick={toggleMenu}>Contato</Link>
                 </div>
             )}
         </header>

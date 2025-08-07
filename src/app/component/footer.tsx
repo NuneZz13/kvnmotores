@@ -28,7 +28,7 @@ export default function Footer() {
                         <li><a href="#">Política de Privacidade</a></li>
                         <li><a href="#">Termos e Condições de Uso</a></li>
                         <li><a href="#">Livro de reclamações</a></li>
-                        <li><Link href="/contact">Contacto</Link></li>
+                        <li><Link href="/contactos">Contactos</Link></li>
                     </ul>
                 </div>
 
