@@ -1,95 +1,68 @@
-import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import {
+    FaFacebookF,
+    FaPhoneAlt,
+    FaWhatsapp,
+} from 'react-icons/fa';
+import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-200 text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-wrap md:text-left text-center order-first">
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
+        <footer className="bg-gray-700 text-white relative">
+            <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+                {/* Coluna 1 */}
+                <div>
+                    <h3 className="font-bold mb-4">MINHA CONTA</h3>
+                    <ul className="space-y-2 text-gray-300">
+                        <li><a href="#">Encomendas</a></li>
+                        <li><a href="#">Moradas</a></li>
+                        <li><a href="#">Detalhes da conta</a></li>
+                        <li><a href="#">Recuperar senha</a></li>
+                    </ul>
+                </div>
+
+                {/* Coluna 2 */}
+                <div>
+                    <h3 className="font-bold mb-4">INFORMAÇÃO</h3>
+                    <ul className="space-y-2 text-gray-300">
+                        <li><a href="#">Entregas e Devoluções</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições de Uso</a></li>
+                        <li><a href="#">Livro de reclamações</a></li>
+                        <li><Link href="/contact">Contacto</Link></li>
+                    </ul>
+                </div>
+
+                {/* Coluna 3 */}
+                <div>
+                    <h3 className="font-bold mb-4">CONTACTE-NOS</h3>
+                    <div className="flex space-x-4 mb-4">
+                        <a href="https://facebook.com/kvn.motores" target="_blank" rel="noopener noreferrer"  className="flex items-center space-x-2 text-white hover:text-gray-300">
+                            <FaFacebookF className="cursor-pointer" />
+                        </a>
+                        <a href="tel:+351933059881" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-gray-300">
+                            <FaPhoneAlt className="cursor-pointer" />
+                        </a>
                     </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-                        <div
-                            className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                            <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                                <label htmlFor="footer-field"
-                                       className="leading-7 text-sm text-gray-600">Placeholder</label>
-                                <input type="text" id="footer-field" name="footer-field"
-                                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-                            </div>
-                            <button
-                                className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button
-                            </button>
-                        </div>
-                        <p className="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny
-                            pack
-                            <br className="lg:block hidden"/>waistcoat green juice
-                        </p>
-                    </div>
+                    <p className="text-white font-medium">+351 933059881</p>
+                    <p className="text-gray-400 text-xs mt-1">(chamada para a rede móvel nacional)</p>
                 </div>
             </div>
-            <div className="bg-gray-100">
-                <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-                        © 2025 KVN Motores - Todos os direitos reservados | All rights reserved
-                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-4">
-                      <a href="https://facebook.com/kvn.motores" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <FaFacebook size={24} className="hover:text-blue-600 transition" />
-                      </a>
-                      <a href="https://wa.me/933059881" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                        <FaWhatsapp size={24} className="hover:text-green-500 transition" />
-                      </a>
-                    </span>
-                </div>
+
+            {/* Parte inferior */}
+            <div className="border-t border-gray-600 py-4 px-6 flex flex-col md:flex-row justify-center items-center text-sm">
+                <p className="text-gray-300">Copyright 2007 © <span className="font-bold">KVN Motores</span></p>
             </div>
+
+            {/* Botão WhatsApp */}
+            <a
+                href="https://wa.me/351933059881"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50"
+            >
+                <FaWhatsapp size={24} />
+            </a>
+
         </footer>
-    )
+    );
 }
